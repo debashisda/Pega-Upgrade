@@ -1,7 +1,7 @@
 @echo off
 
 set JAVA_HOME=C:\Program Files\Java\jdk-17
-set CATALINA_HOME=C:\Users\debas\Documents\Pega Upgrade POC\apache-tomcat
+set CATALINA_HOME=\apache-tomcat
 set "CATALINA_BASE=%CATALINA_HOME%"
 
 set JAVA_OPTS=-DNodeType=BackgroundProcessing,WebUser,Search 
