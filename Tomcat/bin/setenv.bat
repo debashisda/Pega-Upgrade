@@ -5,7 +5,7 @@ set CATALINA_HOME=C:\apache-tomcat
 set "CATALINA_BASE=%CATALINA_HOME%"
 
 set JAVA_OPTS=-DNodeType=BackgroundProcessing,WebUser,Search 
-rem set JAVA_OPTS==%JAVA_OPTS% -DNodeTypeStream 
+rem set JAVA_OPTS==%JAVA_OPTS% -DNodeType=Stream 
 
 set JAVA_OPTS=%JAVA_OPTS% -Dname=PEGA-SUPPORT 
 set JAVA_OPTS=%JAVA_OPTS% -Didentification.nodeid=PEGA-SUPPORT 
