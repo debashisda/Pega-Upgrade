@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pegarules>
+	
 	<env name="initialization/settingsource" value="merged" />
 	<env name="database/databases/PegaRULES/dataSource" value="java:comp/env/jdbc/PegaRULES"/>
 	<env name="database/databases/PegaDATA/dataSource" value="java:comp/env/jdbc/PegaRULES"/>
+	
 	<!-- External Kafka Configuration -->
 	<env name="services/stream/provider" value="ExternalKafka" />
 	<env name="services/stream/broker/url" value="localhost:9092" />
@@ -10,4 +12,5 @@
 	<env name="services/stream/encryption/security/protocol" value="PLAINTEXT"/>
 	<env name="services/stream/encryption/security/sasl/mechanism" value="PLAIN"/>
 	<env name="services/stream/name" value="pega-support-{stream.name}"/>
+	
 </pegarules>
