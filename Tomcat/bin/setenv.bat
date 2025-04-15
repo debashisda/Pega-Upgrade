@@ -21,7 +21,7 @@ set JAVA_OPTS=%JAVA_OPTS% "-Dindex.directory=%CATALINA_HOME%\index"
 set JAVA_OPTS=%JAVA_OPTS% "-Xloggc:%CATALINA_HOME%/logs/PEGA-SUPPORT_gcstats.log"
 
 rem set JAVA_OPTS=%JAVA_OPTS% -Djavax.sql.DataSource.Factory=org.apache.commons.dbcp.BasicDataSourceFactory
-set JAVA_OPTS=%JAVA_OPTS% -Djavax.sql.DataSource.Factory=org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory
+rem set JAVA_OPTS=%JAVA_OPTS% -Djavax.sql.DataSource.Factory=org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory rem for Tomcat 9 
 set JAVA_OPTS=%JAVA_OPTS% -XX:+HeapDumpOnOutOfMemoryError 
 set JAVA_OPTS=%JAVA_OPTS% -XX:+UseG1GC
 set JAVA_OPTS=%JAVA_OPTS% -XX:+UseStringDeduplication 
